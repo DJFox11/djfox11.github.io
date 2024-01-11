@@ -3,29 +3,34 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+    <title>DJ_Fox11 • Home</title>
   </head>
   <body>
-    <h1>Welcome to my personal website!</h1>
-    <h3>In the future I will post some modeling ripping tutorials and other things about me!</h3>
-    <br>
-    <p><b>Games you will be seeing tutorials from:</b><p>
-    <ul>
-      <li>Hyrule Warriors: Age of Calamity</li>
-      <li>Luigi's Mansion 3</li>
-      <li>Mario + Rabbids Kingdom Battle</li>
-      <li> Mario + Rabbids Sparks of Hope</li>
-      <li>Mario Kart 8/Deluxe</li>
-      <li>New Super Mario Bros. U/Deluxe</li>
-      <li>Super Mario 3D World/Bowser's Fury</li>
-      <li>Super Mario Bros. Wonder</li>
-      <li>Super Mario Odyssey</li>
-      <li>Super Mario RPG</li>
-      <li>The Legend of Zelda: Breath of the Wild</li>
-      <li>The Legend of Zelda: Tears of the Kingdom</li>
-    </ul>
-    <h2>Coming soon</h2>
+    <header>
+        <div class="logo">DJ_Fox11</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Model Ripping Tutorials</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
   </body>
-</html
+</html>
