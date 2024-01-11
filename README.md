@@ -23,4 +23,4 @@ Welcome to my personal website! This project is a simple website built with HTML
 - The Legend of Zelda: Breath of the Wild
 - The Legend of Zelda: Tears of the Kingdom
 
-## Coming Soon...
+_Coming soon..._
