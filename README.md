@@ -2,7 +2,7 @@
 
 Welcome to my personal website! This project is a simple website built with HTML and CSS, showcasing information about me, my projects, and interests.
 
-## Features
+## Upcoming Features
 
 - Clean and minimal design.
 - Responsive layout for various screen sizes.
@@ -22,3 +22,5 @@ Welcome to my personal website! This project is a simple website built with HTML
 - Super Mario RPG
 - The Legend of Zelda: Breath of the Wild
 - The Legend of Zelda: Tears of the Kingdom
+
+## Coming Soon...
