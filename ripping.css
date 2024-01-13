@@ -144,15 +144,10 @@ header {
 
 @media only screen and (max-width: 900px) {
     .imgs img {
-        display: hidden;
-        padding-left: 50px;
-        padding-right: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+      
     }
 }
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #212121;
-    color: #fefefe;
-  }
