@@ -1,6 +1,7 @@
 # Personal Website
 
 Welcome to my personal website! This project is a simple website built with HTML and CSS, showcasing information about me, my projects, and interests.
+https://djfox11.github.io/
 
 ## Upcoming Features
 
