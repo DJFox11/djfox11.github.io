@@ -150,4 +150,22 @@ header {
         width: 70%;
       
     }
+
+    * {
+        font-family: system-ui;
+    }
+}
+
+
+main {
+    min-height: 100vh;
+}
+
+footer, push {
+    height: 2.5rem;
+    background-color: #212121;
+    color: #fefefe;
+    text-align: center;
+    bottom: 4;
+    padding: 10px;
 }
