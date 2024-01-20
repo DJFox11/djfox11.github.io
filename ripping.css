@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
 
+:root {
+    --dark-bg: #121212;
+    --light-bg: #212121;
+    --text-white: #fefefe;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -150,22 +156,4 @@ header {
         width: 70%;
       
     }
-
-    * {
-        font-family: system-ui;
-    }
-}
-
-
-main {
-    min-height: 100vh;
-}
-
-footer, push {
-    height: 2.5rem;
-    background-color: #212121;
-    color: #fefefe;
-    text-align: center;
-    bottom: 4;
-    padding: 10px;
 }

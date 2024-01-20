@@ -18,16 +18,15 @@
         </div>
         <nav class="nav-bar">
             <ul>
-                <li><a href="./">Home</a></li>
-                <li><a href="./">About</a></li>
+                <li><a href="/.">Home</a></li>
+                <li><a href="/.">About</a></li>
                 <li><a href="ripping" class="active">Model Ripping Tutorials</a></li>
-                <li><a href="./">Contact</a></li>
+                <li><a href="/.">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
       <div class="tutorial">
-        <img src="/images/logos/smo.png">
         <h1>Tutorial last updated: 28/05/23</h1>
 
         <br>
@@ -159,6 +158,16 @@
 
           <p><b>Q. </b>When opening the model's .bfres file there are no textures. Where are they?</p>
           <p><b>A. </b>If there are no textures on the loaded model in Switch Toolbox, do not worry. The textures are most likely stored in another .SZS. For example, models related to kingdoms have seperate .SZS files containg the textures. The end of the file should be called "StageTexture". You don't need to find and extract the .SZS for the textures. Switch Toolbox finds and extracts them.</p>
+          
+          <br>
+          <hr>
+          <br>
+
+          <div class="container">
+            <form method="get" action="/blend-files/Icon_Setup.blend">
+              <button type="submit">Blender Startup File</button>
+            </form>
+          </div>
       </div>
     </main>
   </body>
@@ -169,10 +178,4 @@
         navBar.classList.toggle("active");
     }
 </script>
-<div class="bottom-img">
-  <img src="/images/tut-art/smo.png">
-</div>
-<footer>
-  Copyright &copy; 2024 DJ_Fox11. All Rights Reserved.
-</footer>
 </html>
