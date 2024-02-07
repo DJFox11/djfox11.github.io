@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="ripping-tuts.css">
+    <title>DJ_Fox11 • Home</title>
+  </head>
+  <body>
+    <header>
+        <div class="logo">DJ_Fox11</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="/.">Home</a></li>
+                <li><a href="/.">About</a></li>
+                <li><a href="ripping" class="active">Model Ripping Tutorials</a></li>
+                <li><a href="/.">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="tutorial">
+        <h1>Tutorial last updated: 28/05/23</h1>
+
+        <br>
+
+        <div class="bold">
+          <p>You will need to source a usable NSP/XCI of the game yourself!</p>
+          <p>This tutorial will not contain instructions for installing/setting up Yuzu and Ryujinx, it is assumed you already know/have.</p>
+
+          <br>
+
+        </div>
+        <p>Here you will find a helpful in-depth tutorial for extracting models from Super Mario Odyssey!</p>
+
+        <br>
+
+        <p>You will learn the following:</p>
+        <ul style="padding-left: 30px;">
+          <li>How to extract the base game.</li>
+          <li>Importing and converting the ripped models.</li>
+          <li>Settings up texture maps.</li>
+          <li>Preparing the model for submission on TMR.</li>
+        </ul>
+
+        <br>
+
+        <p>You will need the following:</p>
+        <ul style="padding-left: 30px;">
+          <li>A NSP/XCI of the game. (NSP: Nintendo Submission Package. XCI: Game Cartridge Image.)</li>
+          <li><a href="https://yuzu-emu.org/downloads/" target="_blank" rel="noopener noreferrer">Yuzu</a>/<a href="https://ryujinx.org/downloads/" target="_blank" rel="noopener noreferrer">Ryujinx</a> (Extracts the base game.)</li>
+          <li><a href="https://github.com/KillzXGaming/Switch-Toolbox/releases/" target="_blank" rel="noopener noreferrer">Switch Toolbox</a> (Extracts models and textures.)</li>
+          <li><a href="https://blender.org/download/" target="_blank" rel="noopener noreferrer">Blender</a> or any modelling software of your choice. (Testing/viewing the model, creating the icons for submission)</li>
+          <li><a href="https://models-resource.com/page/modelchecker" target="_blank" rel="noopener noreferrer">Model Checker</a> (Checking for any issues with the model. It will not make the model have a guaranteed approval.)</li>
+        </ul>
+        <br>
+        <hr>
+        <br>
+
+        <div class="bold">
+          <h2>Extracting the Game</h2>
+
+          <br>
+
+          <p>For Yuzu</p>
+        </div>
+
+        <ol style="padding-left: 30px;">
+          <li>Make sure Super Mario Odyssey appears in the games list</li>
+          <li>Right-click the game and click Dump RomFS > Dump RomFS.</li>
+          <li>A new window should appear asking how you would like the game dumped. Selected "Full". Wait for the extraction to be complete.</li>
+          <li>A window should appear in File Explorer for the dumped game. Navigate to the "ObjectData" folder. Keep note of the directory for later.</li>
+        </ol>
+
+        <br>
+
+        <div class="bold">
+          <p>For Ryujinx</p>
+        </div>
+
+        <ol style="padding-left: 30px;">
+          <li>Make sure Super Mario Odyssey appears in the games list.</li>
+          <li>Right-click the game and select Extract Data > RomFS, then choose a location for the dump. Keep note of the directory for later.</li>
+        </ol>
+
+        <br>
+        <br>
+
+        <div class="bold">
+          <h2>Extracting and Converting the Models (Switch Toolbox)</h2>
+        </div>
+       
+        <br>
+
+        <ol style="padding-left: 30px;">
+          <li>Extract the download .zip archieve called "Toolbox-Latest.zip". Inside the extracted archieve, open up "Toolbox.exe".</li>
+          <li>Once open, go to File > Open (Folder), and navigate to the extracted RomFS of Super Mario Odyssey, once there select the ObjectData folder and click "Select Folder".</li>
+          <li>Once opened, you should see a long list of .szs files. Those are packages containg models, textures, animations, and other files. Find the model you would like to extact and double-click on the respective .szs file.</li>
+          <li>Inside the .szs you should see some other files, there should be a .bfres and some .byml files. Don't worry about the .byml files, the .bfres is what we want.</li>
+          <li>Again, double-click on that to open your model in the viewport to the left. You should also see some folders under the .BFRES appear, there should be a "Models", "Textures", "Animations" with a plus icon. The only we need to use is the "Models" folder.</li>
+          <li>Click the + icon for the "Models" folder, then right-click the model underneath that folder. Click "Extract" and choose a spot for the model. Make sure to extract it in a .dae file.</li>
+          <li>If you are just wanting to import the model into an already existing project for something else, go to the following section. If you are creating icons, follow the steps in the following section in the attached "Setup.blend".</li>
+        </ol>
+
+        <br>
+        <br>
+
+        <div class="bold">
+          <h2>Importing the Model (Blender)</h2>
+        </div>
+
+        <br>
+
+        <ol style="padding-left: 30px;">
+          <li>Open up Blender, go to File > Import > Collada (.dae) and select the extracted the model from earlier.</li>
+          <li>Once the model has been imported, you'll quickly notice it's quite big. Make sure the amarture is selected in the outliner, and scale the model down to a reasonable size. I like to scale it down to 0.01</li>
+          <li>Only follow the following steps if you creating icons. Don't export the model with the texture maps applied, they won't be stored in the exported model anyway.</li>
+          <li>Next, head over to the "Shading" workspace. All exported textures will be assigned here</li>
+          <li>After that, add a new "Image Texture" node and select the grey texture, this is the roughness texture. Plug the "Colour" output from the roughness texture into the "Roughness" value of the "Principled BSDF" node. Make sure to switch the "Colour Space" of the texture to "Non-Colour".</li>
+          <li>If metallic and emission textures are present, repeat the previous step.</li>
+          <li>Get another "Image Texture" node and select the purple normal map.</li>
+          <li>Get a node called "Normal Map" and plug the "Colour" of the normal map into the "Colour" of the normal map node. Then plug the "Normal Output" of the "Normal Map" node into the normal value on the "Principled BSDF".</li>
+          </ol>
+
+          <br>
+          <br>
+
+          <div class="bold">
+            <h2>Preparing the Model for Submission (Blender, Model Checker)</h2>
+          </div>
+
+          <br>
+
+          <ol style="padding-left: 30px;">
+            <li>Once the model has been scaled down to a reasonable size, head over to the "Object Data Proporites" panel, the icon is a little green triangle. Click the drop-down under "UV-Maps" and delete any extra unused UV maps. Some UV maps are used for extra materials and other things. Only delete these if you are sure they are not needed.</li>
+            <li>Then, go to File > Export > Collada (.dae)</li>
+            <li>Leave the export settings the way they are and click export.</li>
+            <li>With the model exported, open it up in the downloaded Model Checker, it should be a .html file.</li>
+            <li>If everything has gone well, you're should have no issues. If there are any issues, the model checker will identify them and tell you how to fix them.</li>
+          </ol>
+
+          <br>
+          <hr>
+          <br>
+
+          <div class="bold">
+            <h2>FAQ</h2>
+          </div>
+
+          <br>
+
+          <p><b>Q. </b>When opening the model's .bfres file there are no textures. Where are they?</p>
+          <p><b>A. </b>If there are no textures on the loaded model in Switch Toolbox, do not worry. The textures are most likely stored in another .SZS. For example, models related to kingdoms have seperate .SZS files containg the textures. The end of the file should be called "StageTexture". You don't need to find and extract the .SZS for the textures. Switch Toolbox finds and extracts them.</p>
+          
+          <br>
+          <hr>
+          <br>
+
+          <div class="container">
+            <form method="get" action="/blend-files/Icon_Setup.blend">
+              <button type="submit">Blender Startup File</button>
+            </form>
+          </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function() {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
+</html>

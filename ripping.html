@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="ripping.css">
+    <title>DJ_Fox11 • Home</title>
+  </head>
+  <body>
+    <header>
+        <div class="logo">DJ_Fox11</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./">About</a></li>
+                <li><a href="ripping" class="active">Model Ripping Tutorials</a></li>
+                <li><a href="./">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="imgs">
+        <a href=""><img src="/images/logos/hwaoc.png" alt="Hyrule Warriors: Age of Calamity"></a>
+        <a href=""><img src="/images/logos/lm3.png" alt="Luigi's Mansion 3"></a>
+        <a href=""><img src="/images/logos/mk8.png" alt="Mario Kart 8"></a>
+        <a href=""><img src="/images/logos/mrkb.png" alt="Mario + Rabbids Kingdom Battle"></a>
+        <a href=""><img src="/images/logos/mrsoh.png" alt="Mario + Rabbids Sparks of Hope"></a>
+        <a href=""><img src="/images/logos/nsmbu.png" alt="New Super Mario Bros. U"></a>
+        <a href=""><img src="/images/logos/smbw.png" alt="Super Mario Bros. Wonder"></a>
+        <a href="/ripping-tuts/smo"><img src="/images/logos/smo.png" alt="Super Mario Odyssey"></a>
+        <a href=""><img src="/images/logos/smrpg.png" alt="Super Mario RPG"></a>
+        <a href=""><img src="/images/logos/tlozbotw.png" alt="The Legend of Zelda: Breath of the Wild"></a>
+        <a href=""><img src="/images/logos/tloztotk.png" alt="The Legend of Zelda: Tears of the Kingdom"></a>
+    </div>
+  </body>
+  <script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function() {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
+</html>
