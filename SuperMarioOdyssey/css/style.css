@@ -1,5 +1,5 @@
 html {
-    background-image: url(/SuperMarioOdyssey/image/toc-background-image-upscale.webp);
+    background-image: url(/SuperMarioOdyssey/image/toc-background-image-upscale.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -91,14 +91,4 @@ h1 {
     bottom: 0;
     left: 130px;
     font-size: 24px;
-}
-
-.toc-video video {
-    filter: saturate(80%);
-    transform: rotate(-11deg);
-    position: absolute;
-    top: 320px;
-    left: 1155px;
-    width: 891px;
-    height: 390.5px;
 }
