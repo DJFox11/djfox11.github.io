@@ -50,6 +50,7 @@ h1 {
 }
 
 .toc>li>a:hover {
+    outline: none;
     background-color: #fff;
     color: #525252;
     background-image: url(/SuperMarioOdyssey/image/cap-select.webp);
@@ -66,6 +67,11 @@ h1 {
     background-position-y: 21px;
     background-position-x: 10px;
     background-size: 65px;
+}
+
+.toc li a.selected,
+.toc li a:hover {
+    outline: none !important;
 }
 
 .game-select {

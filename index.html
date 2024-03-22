@@ -52,21 +52,44 @@
     <script>
         const menuItems = document.querySelectorAll('.toc li a');
         let selectedItemIndex = 0;
+        let mouseSelected = false;
     
         document.addEventListener('keydown', function(event) {
             const key = event.key;
             if (key === 'ArrowDown') {
                 selectedItemIndex = (selectedItemIndex + 1) % menuItems.length;
+                mouseSelected = false; // Set flag to false when selection is made using arrow keys
+                updateSelected();
             } else if (key === 'ArrowUp') {
                 selectedItemIndex = (selectedItemIndex - 1 + menuItems.length) % menuItems.length;
+                mouseSelected = false; // Set flag to false when selection is made using arrow keys
+                updateSelected();
             }
+        });
     
+        // Add event listener for mouseover to remove selected class from all menu items
+        menuItems.forEach(item => {
+            item.addEventListener('mouseover', function() {
+                if (!mouseSelected) { // Check flag to prevent double selection
+                    menuItems.forEach(item => item.classList.remove('selected'));
+                    mouseSelected = true; // Set flag to true when selection is made using mouse hover
+                }
+            });
+        });
+    
+        // Function to update selected item
+        function updateSelected() {
+            // Remove 'selected' class from all menu items
             menuItems.forEach(item => item.classList.remove('selected'));
     
+            // Add 'selected' class to the currently selected item
             menuItems[selectedItemIndex].classList.add('selected');
     
+            // Focus on the selected item
             menuItems[selectedItemIndex].focus();
-        });
+        }
     </script>
+    
+    
 </body>
 </html>
