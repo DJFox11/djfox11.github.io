@@ -7,29 +7,33 @@
     <link rel="shortcut icon" href="../smo.ico" type="image/x-icon">
     <link rel="stylesheet" href="/SuperMarioOdyssey/css/style.css">
     <link rel="stylesheet" href="/SuperMarioOdyssey/css/font-setting.css">
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
 <body>
     <h1>
         <span data-msgcom="true" data-msgid="textbox_id_10901">DJ_Fox11</span>
     </h1>
 
-    <ul class="toc">
+    <ul class="toc" id="menu">
         <li>
-            <a href="#">
+            <a href="#" tabindex="1">
                 <span data-msgid="textbox_id_902">Home</span>
             </a>
         </li>
         <li>
-            <a href="#"> <!-- about.html -->
+            <a href="#" tabindex="2"> <!-- about.html -->
                 <span data-msgid="textbox_id_902">Ripping Tutorials</span>
             </a>
         </li>
         <li>
-            <a href="#"> <!-- ripping.html -->
+            <a href="#" tabindex="3"> <!-- ripping.html -->
                 <span data-msgid="textbox_id_902">Tools</span>
             </a>
         </li>
         <li>
-            <a href="#"> <!-- contact.html -->
+            <a href="#" tabindex="4"> <!-- contact.html -->
                 <span data-msgid="textbox_id_902">Contact</span>
             </a>
         </li>
@@ -39,10 +43,30 @@
         <div class="smo">
             <a href="#"><img src="/SuperMarioOdyssey/image/logo.webp" alt="smo"></a>
         </div>
-        <p>By DJ_Fox11</p>
-        <!--- <div class="totk">
-            <a href="#"><img src="/TOTK/images/logo.webp" alt="totk"></a>
-        </div> --->
+
+        <div class="totk">
+            <a href="#"><img src="/BreathOfTheWild/images/logo.webp" alt="botw"></a>
+        </div>
     </div>
+
+    <script>
+        const menuItems = document.querySelectorAll('.toc li a');
+        let selectedItemIndex = 0;
+    
+        document.addEventListener('keydown', function(event) {
+            const key = event.key;
+            if (key === 'ArrowDown') {
+                selectedItemIndex = (selectedItemIndex + 1) % menuItems.length;
+            } else if (key === 'ArrowUp') {
+                selectedItemIndex = (selectedItemIndex - 1 + menuItems.length) % menuItems.length;
+            }
+    
+            menuItems.forEach(item => item.classList.remove('selected'));
+    
+            menuItems[selectedItemIndex].classList.add('selected');
+    
+            menuItems[selectedItemIndex].focus();
+        });
+    </script>
 </body>
 </html>
