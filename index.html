@@ -8,9 +8,6 @@
     <link rel="shortcut icon" href="../smo.ico" type="image/x-icon">
     <link rel="stylesheet" href="/SuperMarioOdyssey/css/style.css">
     <link rel="stylesheet" href="/SuperMarioOdyssey/css/font-setting.css">
-    <style>
-        /* Add your CSS styles here */
-    </style>
 </head>
 <body>
     <h1>
@@ -45,8 +42,8 @@
             <a href="#"><img src="/SuperMarioOdyssey/image/logo.webp" alt="smo"></a>
         </div>
 
-        <div class="totk">
-            <a href="#"><img src="/BreathOfTheWild/images/logo.webp" alt="botw"></a>
+        <div class="sm3dw">
+            <a href="#"><img src="/SuperMario3DWorld/images/logo.webp" alt="sm3dw"></a>
         </div>
     </div>
 
@@ -73,7 +70,7 @@
             item.addEventListener('mouseover', function() {
                 if (!mouseSelected) { // Check flag to prevent double selection
                     menuItems.forEach(item => item.classList.remove('selected'));
-                    mouseSelected = true; // Set flag to true when selection is made using mouse hover
+                    mouseSelected = false; // Set flag to true when selection is made using mouse hover
                 }
             });
         });
