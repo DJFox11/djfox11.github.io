@@ -16,6 +16,7 @@
 - Mario + Rabbids Sparks of Hope `Nintendo Switch`
 - Mario Kart 8/Deluxe `Wii U/Nintendo Switch`
 - New Super Mario Bros. U/Deluxe `Wii U/Nintendo Switch`
+- Princess Peach: Showtime! `Nintendo Switch`
 - Super Mario 3D World/Bowser's Fury `Wii U/Nintendo Switch`
 - Super Mario Bros. Wonder `Nintendo Switch`
 - Super Mario Odyssey `Nintendo Switch`
