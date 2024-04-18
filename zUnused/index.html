@@ -6,21 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
     <title>DJ_Fox11 • Home</title>
     <link rel="shortcut icon" href="../smo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/BreathOfTheWild/css/style.css">
-    <link rel="stylesheet" href="/SuperMarioOdyssey/css/font-setting.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/font-setting.css">
 </head>
 <body>
-<div class="logo">
-    <img src="/BreathOfTheWild/images/djfox11.png" alt="logo">
-</div>
+    <h1>
+        <span data-msgcom="true" data-msgid="textbox_id_10901">DJ_Fox11</span>
+    </h1>
 
-    <div class="game-select">
-        <div class="smo">
-            <a href="/index.html"><img src="/SuperMarioOdyssey/image/logo.webp" alt="smo"></a>
-        </div>
+    <ul class="toc" id="menu">
+        <li>
+            <a href="#" tabindex="1">
+                <span data-msgid="textbox_id_902">Home</span>
+            </a>
+        </li>
+        <li>
+            <a href="/ripping-tuts/ripping.html" tabindex="2"> <!-- ripping.html -->
+                <span data-msgid="textbox_id_902">Ripping Tutorials</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" tabindex="3"> <!-- tools.html -->
+                <span data-msgid="textbox_id_902">Tools</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" tabindex="4"> <!-- contact.html -->
+                <span data-msgid="textbox_id_902">Contact</span>
+            </a>
+        </li>
+    </ul>
 
-        <div class="botw">
-            <a href="#"><img src="/BreathOfTheWild/images/logo.webp" alt="botw"></a>
-        </div>
-    </div>
+    <script>
+        const menuItems = document.querySelectorAll('.toc li a');
+        let selectedItemIndex = 0;
+        let mouseSelected = false;
+    
+        document.addEventListener('keydown', function(event) {
+            const key = event.key;
+            if (key === 'ArrowDown') {
+                selectedItemIndex = (selectedItemIndex + 1) % menuItems.length;
+                mouseSelected = false; // Set flag to false when selection is made using arrow keys
+                updateSelected();
+            } else if (key === 'ArrowUp') {
+                selectedItemIndex = (selectedItemIndex - 1 + menuItems.length) % menuItems.length;
+                mouseSelected = false; // Set flag to false when selection is made using arrow keys
+                updateSelected();
+            }
+        });
+    
+        // Add event listener for mouseover to remove selected class from all menu items
+        menuItems.forEach(item => {
+            item.addEventListener('mouseover', function() {
+                if (!mouseSelected) { // Check flag to prevent double selection
+                    menuItems.forEach(item => item.classList.remove('selected'));
+                    mouseSelected = false; // Set flag to true when selection is made using mouse hover
+                }
+            });
+        });
+    
+        // Function to update selected item
+        function updateSelected() {
+            // Remove 'selected' class from all menu items
+            menuItems.forEach(item => item.classList.remove('selected'));
+    
+            // Add 'selected' class to the currently selected item
+            menuItems[selectedItemIndex].classList.add('selected');
+    
+            // Focus on the selected item
+            menuItems[selectedItemIndex].focus();
+        }
+    </script>
+    
+    
 </body>
+</html>

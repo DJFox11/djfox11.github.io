@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "RodinEB";
+    src: url("/zUnused/SuperMarioOdyssey/font/FOT-RodinNTLGPro-EB.otf");
+}
+
+@font-face {
+    font-family: "UnageoB";
+    src: url("/fonts/UnageoBlack.ttf");
+}
+
+@font-face {
+    font-family: "UnageoBL";
+    src: url("fonts/UnageoBlack.ttf");
+}

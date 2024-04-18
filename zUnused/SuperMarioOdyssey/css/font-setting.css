@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "RodinEB";
+    src: url("/SuperMarioOdyssey/font/FOT-RodinNTLGPro-EB.otf");
+}
+
+@font-face {
+    font-family: "RodinDB";
+    src: url("/SuperMarioOdyssey/font/FOT-RodinNTLGPro-DB.otf");
+}
