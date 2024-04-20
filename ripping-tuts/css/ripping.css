@@ -75,7 +75,7 @@ body {
 }
 
 .text--sub {
-	font-size: 12px;
+	font-size: 20px;
 	letter-spacing: 0.5rem;
 	text-transform: uppercase;
 	margin-bottom: 40px;
@@ -86,7 +86,7 @@ body {
 	font-size: 7.5em;
 	font-weight: 700;
 	line-height: 130px;
-  margin-left: -8px;
+
 }
 
 .text--normal {
@@ -155,11 +155,14 @@ body {
 	position: absolute;
 	bottom: 20px;
 	right: 15%;
-	max-height: 40vw;
+	height: 40vw;
+	width: auto;
 	opacity: 1;
 	transform: translate3d(0,0,0);
 	transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
 }
+
+
 
 /* Animate-START point */
 
@@ -255,6 +258,7 @@ body {
 
 .flex--pps .flex__item--right {
 	background: #f0a1f0;
+	z-index: -99999;
 }
 
 /* Super Mario 3D World */
@@ -315,4 +319,50 @@ body {
 
 .flex--totk .flex__item--right {
 	background: #5f817a;
+}
+
+.material-symbols-outlined {
+	z-index: 99999;
+	position: absolute;
+	top: 20px;
+	left: 50px;
+	padding: 10px;
+	color: #ffff;
+	transition: 300ms ease-in-out;
+}
+
+.material-symbols-outlined:hover {
+	left: 30px;
+}
+
+@media only screen and (max-device-width: 1000px) {
+	.game__img {
+		height: 370px;
+		width: auto;
+		left: 20px;
+		bottom: 40px;
+	}
+
+	.text--big {
+		margin-left: -10px;
+		position: absolute;
+		font-size: 45px;
+		line-height: normal;
+		left: -40px;
+		top: -350px;
+		z-index: 9999;
+	}
+
+	.text--sub {
+		position: absolute;
+		font-size: 15px;
+		line-height: normal;
+		top: -400px;
+		left: -45px;
+	}
+
+	.material-symbols-outlined {
+		left: 23px;
+		top: -5px;
+	}
 }
