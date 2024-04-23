@@ -307,7 +307,7 @@ a {
 
   @media only screen and (max-device-width: 750px) {
     section .title span {
-      font-size: 10vw
+      font-size: 13vw
     }
 
     nav li {

@@ -328,18 +328,13 @@ body {
 	left: 50px;
 	padding: 10px;
 	color: #ffff;
-	transition: 300ms ease-in-out;
-}
-
-.material-symbols-outlined:hover {
-	left: 30px;
 }
 
 @media only screen and (max-device-width: 1000px) {
 	.game__img {
-		height: 370px;
+		height: 335px;
 		width: auto;
-		left: 20px;
+		left: 15px;
 		bottom: 40px;
 	}
 
@@ -363,6 +358,19 @@ body {
 
 	.material-symbols-outlined {
 		left: 23px;
-		top: -5px;
+		top: 15px;
+	}
+
+	.text--sub {
+		visibility: hidden;
+	}
+}
+
+@media only screen and (max-device-height: 730px) {
+	.text--big {
+		top: -150px;
+		font-size: 30px;
+		position: relative;
+		z-index: 9999;
 	}
 }
