@@ -18,9 +18,9 @@
 
 .slider__navi a {
 	display: block;
-	height: 6px;
+	height: 10px;
 	width: 20px;
-	margin: 20px 0;
+	margin: 30px 0;
 	text-indent: -9999px;
 	box-shadow: none;
 	border: none;
@@ -161,10 +161,6 @@ body {
 	transform: translate3d(0,0,0);
 	transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
 }
-
-
-
-/* Animate-START point */
 
 .flex__container.animate--start .flex__content {
 	transform: translate3d(0,-200%,0);
