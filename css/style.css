@@ -39,7 +39,6 @@ a {
 
   nav li {
     margin: 0;
-    float: left;
     display: inline-block;
     height: 98px;
     margin-bottom: 2px;
@@ -49,7 +48,7 @@ a {
     color: #555;
     transition: background-color 0.5s 0.2s ease, color 0.3s ease;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-weight: 800;
