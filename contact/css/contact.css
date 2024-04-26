@@ -1,8 +1,9 @@
 :root {
     --textbox: #3a3a3a;
     --dark-bg: #1b1b1b;
-    --accent: #16b1d8;
+    --accent: #167ad8;
     --white: #fff;
+    --btn-col: #4a4949;
 }
 
 * {
@@ -75,6 +76,7 @@ body {
 .contact-left button {
     font-family: 'UnageoB';
     display: flex;
+    cursor: pointer;
     align-items: center;
     padding: 15px 30px;
     font-size: 16px;
@@ -82,7 +84,7 @@ body {
     gap: 10px;
     border: none;
     border-radius: 50px;
-    background: var(--textbox)
+    background: var(--textbox);
 }
 
 .contact-left button img {
@@ -93,13 +95,33 @@ body {
     width: 500px;
     filter: drop-shadow(15px 18px 20px #1a1a1a);
 }
-
 @media (max-width:800px) {
+
     .contact-inputs {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
         width: 80vw;
+    }
+
+    .contact-inputs::placeholder {
+        position: absolute;
     }
 
     .contact-right {
         display: none;
+    }
+
+    .contact-left-title hr {
+        display: none;
+    }
+
+    .contact-left-title h2 {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 80vw;
     }
 }
