@@ -15,6 +15,8 @@
 body {
     font-family: 'Unageo', sans-serif;
     background-color: var(--dark-bg);
+    overflow: hidden;
+    height: 100%;
 }
 
 .contact-container {
@@ -34,16 +36,17 @@ body {
 .contact-left-title h2 {
     font-family: 'UnageoB';
     color: var(--white);
-    font-size: 46px;
-    margin-bottom: 5px;
+    font-size: 60px;
+    margin-bottom: 20px;
 }
 
 .contact-left-title hr {
     border: none;
     width: 200px;
     height: 5px;
+    border-radius: 100px;
     background-color: var(--white);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .contact-inputs {
@@ -107,6 +110,8 @@ body {
 
     .contact-inputs::placeholder {
         position: absolute;
+        font-size: 17px;
+        top: 13px;
     }
 
     .contact-right {
@@ -114,7 +119,11 @@ body {
     }
 
     .contact-left-title hr {
-        display: none;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 230px;
     }
 
     .contact-left-title h2 {
@@ -122,6 +131,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         text-align: center;
+        font-size: 48px;
         width: 80vw;
     }
 }
