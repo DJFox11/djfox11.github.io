@@ -1,27 +1,27 @@
 <urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-<loc>https://www.djfox11.com/</loc>
-<lastmod>2024-05-08T01:23:07+00:00</lastmod>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>https://www.djfox11.com/index</loc>
-<lastmod>2024-05-08T01:23:07+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.djfox11.com/ripping-tuts/ripping</loc>
-<lastmod>2024-05-08T01:23:07+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.djfox11.com/contact/contact</loc>
-<lastmod>2024-05-08T01:23:07+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.djfox11.com/index.html</loc>
-<lastmod>2024-05-08T01:23:07+00:00</lastmod>
-<priority>0.64</priority>
-</url>
+	<url>
+		<loc>https://www.djfox11.com/</loc>
+		<lastmod>2024-05-08T01:23:07+00:00</lastmod>
+		<priority>1.00</priority>
+	</url>
+	<url>
+		<loc>https://www.djfox11.com/index</loc>
+		<lastmod>2024-05-08T01:23:07+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://www.djfox11.com/ripping-tuts/ripping</loc>
+		<lastmod>2024-05-08T01:23:07+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://www.djfox11.com/contact/contact</loc>
+		<lastmod>2024-05-08T01:23:07+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://www.djfox11.com/index.html</loc>
+		<lastmod>2024-05-08T01:23:07+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
 </urlset>
