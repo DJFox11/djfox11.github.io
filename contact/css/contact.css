@@ -97,6 +97,11 @@ body {
 .contact-right img {
     width: 500px;
     filter: drop-shadow(15px 18px 20px #1a1a1a);
+    transition: 0.3s ease;
+}
+
+.contact-right img:hover {
+    scale: 1.1;
 }
 @media (max-width:800px) {
 
