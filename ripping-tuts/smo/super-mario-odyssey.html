@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Mario Odyssey</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="container">
@@ -25,7 +25,7 @@
         <h3>For Yuzu:</h3>
         <ol>
             <li>Ensure Super Mario Odyssey appears in the games list.</li>
-            <li>Right-click the game and click Dump RomFS > Dump RomFS.</li>
+            <li>Right-click the game and click Dump RomFS &gt; Dump RomFS.</li>
             <li>A new window should appear asking how you would like the game dumped. Select "Full". Wait for the extraction to complete.</li>
             <li>Navigate to the "ObjectData" folder in the dumped game directory. Keep note of the directory for later.</li>
         </ol>
@@ -33,13 +33,13 @@
         <h3>For Ryujinx:</h3>
         <ol>
             <li>Ensure Super Mario Odyssey appears in the games list.</li>
-            <li>Right-click the game and select Extract Data > RomFS, then choose a location for the dump. Keep note of the directory for later.</li>
+            <li>Right-click the game and select Extract Data &gt; RomFS, then choose a location for the dump. Keep note of the directory for later.</li>
         </ol>
 
         <h2>Extracting and Converting the Models (Switch Toolbox):</h2>
         <ol>
             <li>Extract the downloaded .ZIP archive called "Toolbox-Latest.ZIP". Inside the extracted archive, open "Toolbox.EXE".</li>
-            <li>Go to File > Open (Folder), and navigate to the extracted RomFS of Super Mario Odyssey. Select the ObjectData folder and click "Select Folder".</li>
+            <li>Go to File &gt; Open (Folder), and navigate to the extracted RomFS of Super Mario Odyssey. Select the ObjectData folder and click "Select Folder".</li>
             <li>You should see a long list of .SZS files inside. These are packages containing models, textures, animations, and other files. Find the model you would like to extract and double-click on the respective .SZS file.</li>
             <li>Inside the .SZS, you should see a .BFRES file. Double-click on it to open your model in the viewport to the left. The "Models" folder is what we need to use.</li>
             <li>Click the + icon for the "Models" folder, then right-click the model underneath that folder. Click "Extract" and choose a spot for the model. Make sure to extract it as a .DAE file.</li>
@@ -47,7 +47,7 @@
 
         <h2>Importing the Model (Blender):</h2>
         <ol>
-            <li>Open Blender and go to File > Import > Collada (.dae) and select the extracted model.</li>
+            <li>Open Blender and go to File &gt; Import &gt; Collada (.dae) and select the extracted model.</li>
             <li>Once imported, scale the model down to a reasonable size (e.g., 0.01).</li>
             <li>If creating icons, head to the "Shading" workspace. Assign textures to the model.</li>
         </ol>
