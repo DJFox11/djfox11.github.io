@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "UnageoL";
+    src: url("/ripping-tuts/font/UnageoLight.ttf");
+}
+
+@font-face {
+    font-family: "UnageoB";
+    src: url("/ripping-tuts/font/UnageoBold.ttf");
+}
+
+@font-face {
+    font-family: "UnageoBL";
+    src: url("/ripping-tuts/font/UnageoBlack.ttf");
+}

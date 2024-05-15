@@ -1,0 +1,77 @@
+html {
+    background-image: url(/SuperMarioOdyssey/image/toc-background-image-upscale.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'RodinEB';
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    position: absolute;
+    top: 96px;
+    left: 70px;
+    color: #fff;
+    font-size: 73px;
+    padding: 0;
+    margin: 0;
+    transform: rotate(-3deg)
+}
+
+.toc {
+    list-style: none;
+    position: absolute;
+    top: 350px;
+    left: 53px;
+    padding: 0;
+    transform: rotate(-3deg);
+}
+
+.toc>li>a {
+    display: table-cell;
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    padding-left: 80px;
+    width: 464px;
+    height: 46px;
+    border-radius: 4px;
+    vertical-align: middle;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+    margin: 0;
+}
+
+.toc>li>a:hover {
+    outline: none;
+    background-color: #fff;
+    color: #525252;
+    background-image: url(/SuperMarioOdyssey/image/cap-select.webp);
+    background-position-y: 21px;
+    background-position-x: 10px;
+    background-size: 65px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5)
+}
+
+.toc li a.selected {
+    outline: none;
+    background-color: #fff;
+    color: #525252;
+    background-image: url(/SuperMarioOdyssey/image/cap-select.webp);
+    background-position-y: 21px;
+    background-position-x: 10px;
+    background-size: 65px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5)
+}
+
+.toc li a.selected,
+.toc li a:hover {
+    outline: none !important;
+}

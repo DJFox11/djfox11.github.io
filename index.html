@@ -1,83 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="0z4blw6vp1Dv_L4nEF29SlZsBdReGag7KlB9gEp4KKE"/>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
-    <title>DJ_Fox11 • Home</title>
-    <link rel="shortcut icon" href="../smo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/SuperMarioOdyssey/css/style.css">
-    <link rel="stylesheet" href="/SuperMarioOdyssey/css/font-setting.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6N4036C12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-L6N4036C12');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ_Fox11 | Home</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/font-setting.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </head>
 <body>
-    <h1>
-        <span data-msgcom="true" data-msgid="textbox_id_10901">DJ_Fox11</span>
-    </h1>
-
-    <ul class="toc" id="menu">
-        <li>
-            <a href="#" tabindex="1">
-                <span data-msgid="textbox_id_902">Home</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" tabindex="2"> <!-- about.html -->
-                <span data-msgid="textbox_id_902">Ripping Tutorials</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" tabindex="3"> <!-- ripping.html -->
-                <span data-msgid="textbox_id_902">Tools</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" tabindex="4"> <!-- contact.html -->
-                <span data-msgid="textbox_id_902">Contact</span>
-            </a>
-        </li>
-    </ul>
+    <nav>
+        <ul>
+          <a href="/index"><li>Home</li></a>
+          <a href="#"><li>About Me</li></a>
+          <a href="/ripping-tuts/ripping"><li>Ripping Tutorials</li></a>
+          <a href="#"><li>Tools</li></a>
+          <a href="/contact/contact"><li>Contact</li></a>
+          <li class="slide"></li>
+        </ul>
+      </nav>
+      <section>
+        <div class="title"><span>DJ_Fox11</span><br><br><span>Website Developer and <a href="#">Model Ripper</a></span></div>
+      </section>
 
     <script>
-        const menuItems = document.querySelectorAll('.toc li a');
-        let selectedItemIndex = 0;
-        let mouseSelected = false;
-    
-        document.addEventListener('keydown', function(event) {
-            const key = event.key;
-            if (key === 'ArrowDown') {
-                selectedItemIndex = (selectedItemIndex + 1) % menuItems.length;
-                mouseSelected = false; // Set flag to false when selection is made using arrow keys
-                updateSelected();
-            } else if (key === 'ArrowUp') {
-                selectedItemIndex = (selectedItemIndex - 1 + menuItems.length) % menuItems.length;
-                mouseSelected = false; // Set flag to false when selection is made using arrow keys
-                updateSelected();
-            }
-        });
-    
-        // Add event listener for mouseover to remove selected class from all menu items
-        menuItems.forEach(item => {
-            item.addEventListener('mouseover', function() {
-                if (!mouseSelected) { // Check flag to prevent double selection
-                    menuItems.forEach(item => item.classList.remove('selected'));
-                    mouseSelected = false; // Set flag to true when selection is made using mouse hover
-                }
-            });
-        });
-    
-        // Function to update selected item
-        function updateSelected() {
-            // Remove 'selected' class from all menu items
-            menuItems.forEach(item => item.classList.remove('selected'));
-    
-            // Add 'selected' class to the currently selected item
-            menuItems[selectedItemIndex].classList.add('selected');
-    
-            // Focus on the selected item
-            menuItems[selectedItemIndex].focus();
-        }
+
+      window.addEventListener('scroll', function() {
+          var navbar = document.querySelector('nav');
+          var body = document.querySelector('body');
+          if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+              body.style.paddingBottom = navbar.offsetHeight + "px";
+          } else {
+              body.style.paddingBottom = "0";
+          }
+      });
+
     </script>
-    
-    
 </body>
-</html>
