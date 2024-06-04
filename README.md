@@ -30,4 +30,3 @@
 
 ### PC
 - Final Fantasy VII Remake
-_Coming soon..._
