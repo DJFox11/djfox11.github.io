@@ -10,7 +10,7 @@
 
 ## Featured Game Tutorials
 
-# Nintendo Switch
+### Nintendo Switch
 
 - Hyrule Warriors: Age of Calamity
 - Luigi's Mansion 3
@@ -22,12 +22,12 @@
 - Super Mario RPG
 - The Legend of Zelda: Tears of the Kingdom
 
-# Wii U
+### Wii U
 - Mario Kart 8/Deluxe
 - New Super Mario Bros. U/Deluxe
 - Super Mario 3D World/Bowser's Fury
 - The Legend of Zelda: Breath of the Wild
 
-# PC
+### PC
 - Final Fantasy VII Remake
 _Coming soon..._
