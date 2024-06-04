@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+#content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#left-navigation {
+    width: 500px;
+    margin-right: 20px;
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+}
+
+#toc {
+    background-color: #1e1e1e;
+    border: 3px solid #3e3e3e;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#toc h2 {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+#toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#toc ul ul {
+    margin-left: 20px;
+}
+
+#toc li {
+    margin: 5px 0;
+}
+
+#toc a {
+    text-decoration: none;
+    color: #3686ff;
+}
+
+#toc a:hover {
+    text-decoration: underline;
+}
+
+#contentWrapper {
+    flex-grow: 1;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border: 3px solid #3e3e3e;
+    border-radius: 15px;
+}
+
+.firstHeading {
+    font-size: 36px;
+    border-bottom: 3px solid #3e3e3e;
+    padding-bottom: 15px;
+    margin-top: 0;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.disclaimer {
+    background-color: #704901;
+    border: 2px solid #ffae00;
+    padding: 10px;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.disclaimer-flex {
+    display: flex;
+    align-items: center;
+}
+
+.disclaimer:hover {
+    -webkit-box-shadow: 0px 0px 25px -10px rgba(255,174,0,1);
+    -moz-box-shadow: 0px 0px 25px -10px rgba(255,174,0,1);
+    box-shadow: 0px 0px 25px -10px rgba(255,174,0,1);
+}
+
+h2 {
+    font-size: 20px;
+    border-bottom: 3px solid #3e3e3e;
+    padding-bottom: 15px;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+ul, ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.material-symbols-outlined {
+	z-index: 99999;
+	position: absolute;
+	top: 20px;
+	left: 50px;
+	padding: 10px;
+	color: #ffff;
+    position: sticky;
+    transition: all 0.3s ease-in-out;
+}
+
+.material-symbols-outlined:hover {
+    left: 35px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Extracting Models from Super Mario Odyssey</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+   </head>
+   <body>
+      <a href="./ripping"><span class="material-symbols-outlined">arrow_back</span></a>
+      <div id="content">
+         <div id="left-navigation">
+            <div id="siteNotice"></div>
+            <div id="toc" class="toc">
+               <div id="toctitle">
+                  <h2>Contents</h2>
+               </div>
+               <ul>
+                  <li><a href="#You_Will_Need">You Will Need</a></li>
+                  <li>
+                     <a href="#Extracting_the_Game">Extracting the Game</a>
+                     <ul>
+                        <li><a href="#For_Yuzu">For Yuzu</a></li>
+                        <li><a href="#For_Ryujinx">For Ryujinx</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#Extracting_and_Converting_the_Models">Extracting and Converting the Models</a></li>
+                  <li><a href="#Importing_the_Model">Importing the Model</a></li>
+               </ul>
+            </div>
+         </div>
+         <div id="contentWrapper">
+            <h1 class="firstHeading">Extracting Models from Super Mario Odyssey</h1>
+            <img src="./assets/banner.jpg" alt="Super Mario Odyssey Banner" class="banner">
+            <p class="disclaimer disclaimer-flex"><i>Disclaimer: You will need to source a usable NSP/XCI of Super Mario Odyssey yourself. This tutorial will not contain instructions on installing/setting up Yuzu or Ryujinx as it is assumed you have already done so.</i></p>
+                <h2 id="You_Will_Need">You Will Need:</h2>
+            <ul>
+               <li>A NSP/XCI of the game (NSP: Nintendo Submission Package. XCI: Game Cartridge Image)</li>
+               <li>Yuzu/Ryujinx (for extracting the base game)</li>
+               <li>Switch Toolbox (for extracting models and textures)</li>
+               <li>Blender, or any modeling software of choice (for testing/viewing the model, creating the icons for submission)</li>
+               <li>Model Checker (for checking any issues with the model. <i>Note: It will not guarantee model approval.</i>)</li>
+            </ul>
+            <h2 id="Extracting_the_Game">Extracting the Game:</h2>
+            <h3 id="For_Yuzu">For Yuzu:</h3>
+            <ol>
+               <li>Ensure Super Mario Odyssey appears in the games list.</li>
+               <li>Right-click the game and click Dump RomFS > Dump RomFS.</li>
+               <li>A new window should appear asking how you would like the game dumped. Select "Full". Wait for the extraction to complete.</li>
+               <li>Navigate to the "ObjectData" folder in the dumped game directory. Keep note of the directory for later.</li>
+            </ol>
+            <h3 id="For_Ryujinx">For Ryujinx:</h3>
+            <ol>
+               <li>Ensure Super Mario Odyssey appears in the games list.</li>
+               <li>Right-click the game and select Extract Data > RomFS, then choose a location for the dump. Keep note of the directory for later.</li>
+            </ol>
+            <h2 id="Extracting_and_Converting_the_Models">Extracting and Converting the Models (Switch Toolbox):</h2>
+            <ol>
+               <li>Extract the downloaded .ZIP archive called "Toolbox-Latest.ZIP". Inside the extracted archive, open "Toolbox.EXE".</li>
+               <li>Go to File > Open (Folder), and navigate to the extracted RomFS of Super Mario Odyssey. Select the ObjectData folder and click "Select Folder".</li>
+               <li>You should see a long list of .SZS files inside. These are packages containing models, textures, animations, and other files. Find the model you would like to extract and double-click on the respective .SZS file.</li>
+               <li>Inside the .SZS, you should see a .BFRES file. Double-click on it to open your model in the viewport to the left. The "Models" folder is what we need to use.</li>
+               <li>Click the + icon for the "Models" folder, then right-click the model underneath that folder. Click "Extract" and choose a spot for the model. Make sure to extract it as a .DAE file.</li>
+            </ol>
+            <h2 id="Importing_the_Model">Importing the Model (Blender):</h2>
+            <ol>
+               <li>Open Blender and go to File > Import > Collada (.dae) and select the extracted model.</li>
+               <li>Once imported, scale the model down to a reasonable size (e.g., 0.01).</li>
+               <li>Navigate to the "Shading" workspace. Assign textures to the model.</li>
+            </ol>
+         </div>
+      </div>
+   </body>
+</html>
