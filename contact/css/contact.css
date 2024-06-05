@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 :root {
     --textbox: #3a3a3a;
     --dark-bg: #1b1b1b;
@@ -7,13 +9,13 @@
 }
 
 * {
+    font-family: 'Plus Jakarta Sans', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Unageo', sans-serif;
     background-color: var(--dark-bg);
     overflow: hidden;
     height: 100%;
@@ -34,10 +36,10 @@ body {
 }
 
 .contact-left-title h2 {
-    font-family: 'UnageoB';
     color: var(--white);
     font-size: 60px;
     margin-bottom: 20px;
+    font-weight: 900;
 }
 
 .contact-left-title hr {
@@ -50,12 +52,12 @@ body {
 }
 
 .contact-inputs {
+    font-size: 14px;
     width: 400px;
     height: 50px;
     border: none;
     outline: none;
     padding: 25px;
-    font-family: 'UnageoL';
     color: var(--white);
     border-radius: 50px;
     background-color: var(--textbox);
@@ -66,6 +68,7 @@ body {
     height: 140px;
     padding-top: 15px;
     border-radius: 20px;
+    font-size: 14px;
 }
 
 .contact-inputs:focus {
@@ -77,7 +80,6 @@ body {
 }
 
 .contact-left button {
-    font-family: 'UnageoB';
     display: flex;
     cursor: pointer;
     align-items: center;
@@ -96,14 +98,15 @@ body {
 
 .contact-right img {
     width: 500px;
-    filter: drop-shadow(15px 18px 20px #1a1a1a);
-    transition: 0.3s ease;
+    cursor: pointer;
+    transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .contact-right img:hover {
     scale: 1.1;
 }
-@media (max-width:800px) {
+
+@media (max-width:1250px) {
 
     .contact-inputs {
         position: relative;
