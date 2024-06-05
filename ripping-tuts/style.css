@@ -119,11 +119,10 @@ ul, ol {
     margin: 10px 0;
     padding-left: 20px;
 }
-
 .material-symbols-outlined {
 	z-index: 99999;
 	position: absolute;
-	top: 20px;
+	top: 50px;
 	left: 50px;
 	padding: 10px;
 	color: #ffff;
@@ -133,4 +132,39 @@ ul, ol {
 
 .material-symbols-outlined:hover {
     left: 35px;
+}
+
+@media (max-width: 768px) {
+    #content {
+        flex-direction: column;
+    }
+
+    #left-navigation {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        position: relative;
+        top: 0;
+    }
+
+    .firstHeading {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .material-symbols-outlined {
+        top: 10px;
+        left: 10px;
+    }
+
+    .material-symbols-outlined:hover {
+        left: 5px;
+    }
 }
