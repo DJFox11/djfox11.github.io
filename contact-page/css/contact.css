@@ -123,6 +123,11 @@ body {
 
 @media (max-width:1250px) {
 
+    .contact-container {
+        position: relative;
+        margin-top: -60px;
+    }
+
     .contact-inputs {
         position: relative;
         margin-left: auto;
