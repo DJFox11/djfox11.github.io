@@ -12,7 +12,7 @@
 <body>
     <a href="/"><span class="material-symbols-outlined">arrow_back</span></a>
     <div class="contact-container">
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <form id="djfox11_contact" action="https://api.web3forms.com/submit" method="POST" class="contact-left">
             <div class="contact-left-title">
                 <h2>Get in touch with me!</h2>
                 <hr>
@@ -22,13 +22,29 @@
             <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
             <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-            <button type="submit">Submit <img src="./contact-page/imgs/arrow_icon.png" alt=""></button>
+            <div class="h-captcha" data-captcha="true" data-theme="dark"></div>
+            <button type="submit">Submit <img src="./contact-page/imgs/arrow_icon.png" alt=""></button>            
         </form>
         <div class="contact-right">
             <img src="./contact-page/imgs/Mario.webp" id="mario-img" alt="Mario">
         </div>
         <audio id="mario-aud" src="./contact-page/audio/mario-theme.wav"></audio>
         <script src="./contact-page/scripts/script.js"></script>
+        <script src="https://web3forms.com/client/script.js" async defer></script>
+        <script>
+            const form = document.getElementById('djfox11_contact');
+            
+            form.addEventListener('submit', function(e) {
+            
+                const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+            
+                if (!hCaptcha) {
+                    e.preventDefault();
+                    alert("Please fill out captcha field")
+                    return
+                }
+            });
+            </script>
     </div>
 </body>
 </html>
