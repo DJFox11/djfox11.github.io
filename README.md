@@ -1,12 +1,7 @@
-# Personal Website https://djfox11.github.io
-## **There is currently no mobile layout or support.**
+# Personal Website: https://djfox11.com
 
-## Welcome to my personal website! This project is a simple website built with HTML and CSS, showcasing information about me, my projects, and interests.
-
-## Features
-
-- A layout mimicking a series of Nintendo Switch games.
-- Sections for showcasing personal information, projects, and interests.
+## Welcome to my personal website! 👋
+This project is a simple website built with HTML and CSS, showcasing information about me, my projects, and interests.
 
 ## Featured Game Tutorials
 
