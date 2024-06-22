@@ -13,11 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let currentNumber;
         if (pausedAt201) {
-            // Check if 500ms has passed since pausing at 201
             if (currentTime - pauseStartTime >= 750) {
-                currentNumber = 202;
+                currentNumber = target;
             } else {
-                currentNumber = 201;
+                currentNumber = target - 1;
             }
         } else {
             // Normal counting logic
