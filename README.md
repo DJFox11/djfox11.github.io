@@ -1,5 +1,4 @@
-# WIP Personal Website: https://djfox11.com
-
+# Website down for the time being
 ## Welcome to my personal website! 👋
 This project is a simple website built with HTML and CSS, showcasing information about me, my projects, and interests.
 
