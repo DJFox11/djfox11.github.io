@@ -1,5 +1,7 @@
-# Website down for the time being
-## Welcome to my personal website! 👋
+# Welcome to my personal website!
+> [!NOTE] 
+> The website is down for the time being.
+
 This project is a simple website built with HTML and CSS, showcasing information about me, my projects, and interests.
 
 ## Featured Game Tutorials
