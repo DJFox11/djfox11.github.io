@@ -1,4 +1,4 @@
-# Welcome to my personal website!
+# Welcome to My Personal Website!
 > [!NOTE] 
 > The website is down for the time being.
 
